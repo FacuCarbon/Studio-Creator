@@ -13,6 +13,7 @@ a{
 header{
   background-color: rgb(128, 5, 95);
   height: 67px;
+  font-weight: bold;
 }
 
 .logo{
@@ -24,7 +25,8 @@ header{
 }
 
 .login-registro{
-  padding: 2%;
+  padding: 1%;
+  margin-left: 6%;
 }
 
 .login{
@@ -38,7 +40,7 @@ header{
   background-color: white;
   border-radius: 5px;
   font-size: 20px;
-  margin-left: 13px;
+  margin-left: 4px;
 }
 
 .login-registro a{
@@ -84,7 +86,7 @@ button{
 .articulo-invisible{
     background-color: rgb(146, 150, 144);
     margin-top: 1px;
-    width: 64%;
+    width: 84%;
     height: 490px;
     border-radius: 15px;
 }
@@ -98,7 +100,7 @@ button{
   background-color: rgb(102, 102, 102);
   margin-top: 5px;
   height: 40px;
-  width: 64%;
+  width: 83%;
   border-radius: 20px;
 }
 
@@ -113,6 +115,7 @@ button{
 }
 .edicion-icono1 img{
   width: 23px;
+  margin-left: 12px;
 }
 .edicion-icono2{
   margin-left: 28px;
@@ -120,10 +123,10 @@ button{
 }
 .edicion-icono2 img{
   width: 27px;
-  margin-left: 12px;
+  margin-left: 41px;
 }
 .edicion-icono3{
-  margin-left: 27px;
+  margin-left: 78px;
   width: 23px;
 }
 .edicion-icono3 img{
@@ -132,9 +135,10 @@ button{
 }
 
 .imagenes-invisibles img{
-  width: 85px;
+  width: 99px;
   height: 92px;
-  margin-left: 10px;
+  margin-left: 13px;
+  padding-bottom: 9px;
 }
 
 .section-edicion button{
@@ -143,6 +147,7 @@ button{
 
 .div{
   margin-top: 5px;
+  margin-left: 19px;
 }
 
 .MyPhotos{
@@ -153,8 +158,47 @@ button{
   margin-left: 15px;
 }
 
-.buscador{
-  border-radius: 23px;
-  margin-bottom: 34px;
-  margin-top: 17px;
+.MyPhotos, .discover{
+  margin-top: 15px;
+}
+
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 233px;
+  height: 30px;
+  font-size: 10pt;
+  padding-left: 29px;
+  margin-left: 8px;
+  border-radius: 18px;
+  border: solid 2px white;
+  background-color: rgb(146, 150, 144);
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+.container-1 .icon{
+  position: absolute;
+  top: 18%;
+  margin-left: 15px;
+  z-index: 1;
+}
+.fa-search{
+  color: white;
+}
+
+/* Jquery para mover imagenes */
+#lista{
+  width:270px;
+  min-height: 60px;
+  margin: auto;
+  border:1px solid black;
+  padding: 5px;
+}
+
+.dropped {
+  position: static !important;
 }

@@ -3,9 +3,12 @@
   <head>
     <title><%= title %></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="/stylesheets/edition.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        <script src="script.js"></script>
     <script src="/javaScript/edition.js" defer></script>
   </head>
   <body>
@@ -59,9 +62,9 @@
 
 <div class="col-3 div-intermitente" id="div-invisible" style="display: none">
 <section class="section-edicion">
-  <button class="edicion-icono1"><li><img src="../images/iconos-generales/Editor.png" alt=""> </li></button>
-  <button class="edicion-icono2"><li><img src="../images/iconos-generales/Goma.png" alt=""> </li></button>
-  <button class="edicion-icono3"><li><img src="../images/iconos-generales/tacho.png" alt=""> </li></button>
+  <button class="edicion-icono1"><img src="../images/iconos-generales/Editor.png" alt=""> </button>
+  <button class="edicion-icono2"><img src="../images/iconos-generales/Goma.png" alt=""> </button>
+  <button class="edicion-icono3"><img src="../images/iconos-generales/tacho.png" alt=""> </button>
 </section>
 
   
@@ -71,26 +74,29 @@
     <a class="MyPhotos" href="">My Photos</a>
   </div>
 
-    <form action="" method="POST">
-      <input class="buscador" type="search" name="" id="">
-    </form>
+  <form class="">
+    <div class="container-1">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="Search..." />
+  </div>
+  </form>
 
-  <figure class="imagenes-invisibles">
-    <img src="../images/frutas/Cherry.jpg" alt="">
-    <img src="../images/frutas/dradon.jpg" alt="">
-    <img src="../images/frutas/lima.jpg" alt="">
-    <img src="../images/frutas/Mandarine.jpg" alt="">
-    <img src="../images/frutas/MORAS.jpg" alt="">
-    <img src="../images/frutas/pineapple.jpg" alt="">
-    <img src="../images/frutas/strawberry.jpg" alt="">
-    <img src="../images/frutas/watermelon2.jpg" alt="">
+  <figure class="imagenes-invisibles" draggable="true" id="mover">
+    <img class="moverImagen" src="../images/frutas/Cherry.jpg" alt="">
+    <img class="moverImagen" src="../images/frutas/dradon.jpg" alt="">
+    <img class="moverImagen" src="../images/frutas/lima.jpg" alt="">
+    <img class="moverImagen" src="../images/frutas/Mandarine.jpg" alt="">
+    <img class="moverImagen" src="../images/frutas/MORAS.jpg" alt="">
+    <img class="moverImagen" src="../images/frutas/pineapple.jpg" alt="">
+    <img class="moverImagen" src="../images/frutas/strawberry.jpg" alt="">
+    <img class="moverImagen" src="../images/frutas/watermelon2.jpg" alt="">
   </figure>
 
 </article>
 </div> <!-- Cierre div intermitente-->
-<div class="plantilla" style="width: 500px;height: 500px;background-color: silver;">
-  <div class="iten">
-    <img src="../images/frutas/watermelon2.jpg" alt="">
+
+<div class="col-5 plantilla" style="width: 500px;height: 500px;background-color: silver;">
+  <div class="iten" id="item">
     <div class="resizer nw"></div>
     <div class="resizer ne"></div>
     <div class="resizer sw"></div>
@@ -99,11 +105,32 @@
 </div>
 </div> <!--cierre row-->
 
+
+<div id="comida" draggable="true">
+  <img src="../images/iconos/fonts.png" width="128" height="128"/></div>
+  <div id="lata" draggable="true">
+  <img src="../images/frutas/Cherry.jpg" width="128" height="128" /></div>
+
+
+
+  <div id="lista">
+
+  </div>
+  
+  
+
+<!--Funciones de imagenes-->
 <script type="text/javascript">  function showHide(){
   var ocultar=document.getElementById('div-invisible') 
   ocultar.style.display=(ocultar.style.display=='none')?'inline':'none' }  </script>
   
+  <script src="/javaScript/moverImagen.js"></script>
+
+  <!--Boopstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
+<!--JQUERY-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
   </body>
 </html>
