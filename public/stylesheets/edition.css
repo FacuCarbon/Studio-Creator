@@ -40,3 +40,10 @@
     right: -1px;
     cursor: se-resize;
 }
+
+/* Animacion del menu */
+
+.active{
+    background-color: grey;
+    opacity: 1;
+}
