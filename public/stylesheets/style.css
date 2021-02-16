@@ -80,8 +80,7 @@ button{
 }
 
 .barra-lateral li{
-  padding-top: 38%;
-  margin-left: 13px;
+  padding-top: 17%;
 }
 
 .articulo-invisible{
@@ -170,7 +169,7 @@ button{
   position: relative;
 }
 .container-1 input#search{
-  width: 233px;
+  width: 217px;
   height: 30px;
   font-size: 10pt;
   padding-left: 29px;
@@ -191,15 +190,3 @@ button{
   color: white;
 }
 
-/* Jquery para mover imagenes */
-#lista{
-  width:270px;
-  min-height: 60px;
-  margin: auto;
-  border:1px solid black;
-  padding: 5px;
-}
-
-.dropped {
-  position: static !important;
-}
