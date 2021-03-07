@@ -1,147 +1,320 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="/stylesheets/edition.css">
-    <script src="/javaScript/edition.js" defer></script>
-    <script src="/javaScript/animacionBarra.js" defer></script>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
     
-<header>
+    <header class="header">
+        <div class="row">
+            <div class="col-3 div-logo">
+                <a href=""><img src="" alt="">LOGO HERE</a>
+            </div>
 
-<div class="row">
+            <div class="col-6 li-superior">
+                <ul class="li-superior-contenido">
+                    <article class="articulo-li">
+                    <li class="numero"><img src="./phone.png" alt="">001-234-5678</li>
+                    <li class="email"><img src="./email.png" alt="">yourmail@mail.com</li>
+                    <li class="buscador"><img src="" alt="">Q</li>
+                    <span>_______________________________________________________________________</span>
+                </article>
+                </ul>
+                
+                <ul class="li-inferior">
+                    <li class="home"><a href="">HOME</a></li>
+                    <li class="academic"><a href="">ACADEMIC</a></li>
+                    <li class="teachers"><a href="">TEACHERS</a></li>
+                    <li class="about"><a href="">ABOUT</a></li>
+                    <li class="videos"><a href="">VIDEOS</a></li>
+                    <li class="contacto"><a href="">CONTACT</a></li>
+                </ul>
+                
+            
+            </div>
+        </div> <!-- Cierre row header-->
+    </header>
+    <section class="seccion-imagen">
+    <div class="row">
+        <figure class="imagen-puntos">
+            <img src="./8.png" alt="">
+            </figure>
+        <div class="col-6">
+        
+        <figure class="imagen-1">
+            <img src="./12.png" alt="">
+        </figure>
 
-<div class="col-3 logo">
-  <figure class="">
-    <img src="" alt="logo">
-  </figure>
-
-</div>
-
-<div class="col-6">
-  <nav>
-    <ul class="ul-navbar">
-      <li class="li-navbar"><a href=""> Categories</li></a>
-      <li class="li-navbar"><a href=""> Create it Yourself</li></a>
-      <li class="li-navbar"><a href=""> Download</li></a>
-    </ul>
-  </nav>
-</div>
-
-<div class="col-2 login-registro">
-  <a class="login" href="">Log in</a>
-  <a class="registro" href="">Sign up</a>
-</div>
-
-</div>
-
-</header>
-
-<div class="row">
-  <div class="col-2">
-<nav class="barra-lateral">
-  <ul>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" class="boton"><img src="../images/iconos/new-proyect.png" alt=""> New Proyect</a></div>
-      <div class="borDown"></div>
-    </li>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" class="boton"><img src="../images/iconos/upload.png" alt=""> Upload</a></div>
-      <div class="borDown"></div>
-    </li>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" class="boton"><img src="../images/iconos/templates.png" alt=""> Templates</a></div>
-      <div class="borDown"></div>
-    </li>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" onclick="showHide()" class="boton"><img src="../images/iconos/Photos.png" alt=""> Photos</a></div>
-      <div class="borDown"></div>
-    </li>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" class="boton"><img src="../images/iconos/vector.png" alt=""> Vectors</a></div>
-      <div class="borDown"></div>
-    </li>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" class="boton"><img src="../images/iconos/Effects.png" alt=""> Effects</a></div>
-      <div class="borDown"></div>
-    </li>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" class="boton"><img src="../images/iconos/Sounds.png" alt=""> Sounds</a></div>
-      <div class="borDown"></div>
-    </li>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" class="boton"><img src="../images/iconos/Video.png" alt=""> Video</a></div>
-      <div class="borDown"></div>
-    </li>
-    <li>
-      <div class="borUp"></div>
-      <div class="bor"><a href="#" class="boton"><img src="../images/iconos/fonts.png" alt=""> Fonts</a></div>
-      <div class="borDown"></div>
-    </li>
-  </ul>
-</nav>
-</div>
-
-
-<div class="col-3 div-intermitente" id="div-invisible" style="display: none">
-<section class="section-edicion">
-  <button class="edicion-icono1"><li><img src="../images/iconos-generales/Editor.png" alt=""> </li></button>
-  <button class="edicion-icono2"><li><img src="../images/iconos-generales/Goma.png" alt=""> </li></button>
-  <button class="edicion-icono3"><li><img src="../images/iconos-generales/tacho.png" alt=""> </li></button>
+        <figure class="onda-1">
+            <img src="./10.png" alt="">
+        </figure>
+        <figure class="onda-2">
+            <img src="./10.png" alt="">
+        </figure>
+        <figure class="cabeza">
+            <img src="./9.png" alt="">
+        </figure>
+        
+    </div>
+    <div class="col-6 derecho">
+        <article class="lado-derecho">
+            <div class="learn">
+            <h1>LEARN BY PLAYING</h1>
+        </div>
+        <div class="school">
+            <h2>with your school on line</h2>
+        </div>
+        <div class="admision">
+            <form action="" method="get">
+            <button type="submit">ADMISSION NOW</button>
+            </form>
+        </div>
+        </article>
+        <div class="flor">
+            <figure class="imagen-flor">
+                <img src="./11.png" alt="">
+            </figure>
+        </div>
+    </div>
+    </div>
 </section>
 
-  
-  <article class="articulo-invisible">
-    <div class="div">
-    <a class="discover" href="">Discover</a>
-    <a class="MyPhotos" href="">My Photos</a>
-  </div>
 
-    <form action="" method="POST">
-      <input class="buscador" type="search" name="" id="">
-    </form>
+<section class="seccion-about">
+    <div class="row">
+        <div class="col-1">
+            <figure>
+                <img src="./12.png" alt="">
+            </figure>
+        </div>
+        <div class="col-5 logo-about">
+            <figure class="logotipo-about">
+                <a href=""><img src="" alt="">LOGO HERE</a>
+            </figure>
+        </div>
 
-  <figure class="imagenes-invisibles">
-    <img src="../images/frutas/Cherry.jpg" alt="">
-    <img src="../images/frutas/dradon.jpg" alt="">
-    <img src="../images/frutas/lima.jpg" alt="">
-    <img src="../images/frutas/Mandarine.jpg" alt="">
-    <img src="../images/frutas/MORAS.jpg" alt="">
-    <img src="../images/frutas/pineapple.jpg" alt="">
-    <img src="../images/frutas/strawberry.jpg" alt="">
-    <img src="../images/frutas/watermelon2.jpg" alt="">
-  </figure>
+        <div class="col-3 contenido-about">
+            <article class="contenido">
+                <h6>About us</h6>
+                <h5>SCHOOL ON LINE</h5>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p>Duis aute irure dolor in reprehenderit in volunptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<br>
+                <form class="read-more" action="" method="get">
+                    <button type="submit">READ MORE</button>
+                </form>
+            </article>
 
-</article>
-</div> <!-- Cierre div intermitente-->
-<div class="plantilla" style="width: 500px;height: 500px;background-color: silver;">
-  <div class="iten">
-    <img src="../images/frutas/watermelon2.jpg" alt="">
-    <div class="resizer nw"></div>
-    <div class="resizer ne"></div>
-    <div class="resizer sw"></div>
-    <div class="resizer se"></div>
-  </div>
+        </div>
+    </div> <!-- Row about-->
+</section> <!-- Seccion about-->
+
+<div class="row">
+    <div class="col-12 titulo">
+        <h4 class="features">Features Class</h4>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 class-1">
+        <div class="div-articulo-1">
+            <img src="./1.png" alt="">
+            <article class="articulo-1">
+         <h6>Class 1</h6>
+         <p>Lorem ipsum dolor sit amet, Consectetur adipsing elit, sed do eismod tempor</p>
+        </article>
+    </div>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+        <div class="div-articulo-2">
+            <img src="./2.png" alt="">
+            <article class="articulo-2">
+         <h6>Class 2</h6>
+         <p>Lorem ipsum dolor sit amet, Consectetur adipsing elit, sed do eismod tempor</p>
+        </article>
+    </div>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+        <div class="div-articulo-3">
+            <img src="./3.png" alt="">
+            <article class="articulo-3">
+         <h6>Class 3</h6>
+         <p>Lorem ipsum dolor sit amet, Consectetur adipsing elit, sed do eismod tempor</p>
+        </article>
+    </div>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+        <div class="div-articulo-4">
+            <img src="./4.png" alt="">
+            <article class="articulo-4">
+         <h6>Class 4</h6>
+         <p>Lorem ipsum dolor sit amet, Consectetur adipsing elit, sed do eismod tempor</p>
+        </article>
+    </div>
+    </div>
+
+    <div class="col-12">
+        <form class="view" action="">
+            <button type="submit">VIEW ALL CLASS</button>
+        </form>
+    </div>
+</div> <!-- Row features-->
+
+<section class="school-online">
+    <div class="row">
+        <div class="col-1 div-flor-izquierda">
+            <img src="./11.png" alt="">
+        </div>
+
+        <div class="col-8">
+        <article class="articulos-school">
+            <h4>School On Line qualities</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit eius consequatur hic perferendis dolorum repellendus saepe ipsum dicta totam, tempora quidem similique doloribus molestias, cumque debitis! Hic id quae magnam.</p>
+            
+        </article>
+        <article class="articulo-imagen-school">
+            <figure class="imagen-school">
+                <img src="./icons.png" alt="">
+                <ul class="li-imagen">
+                    <li>LOREM IPSU</li>
+                    <li>LOREM IPSU</li>
+                    <li>LOREM IPSU</li>
+                    <li>LOREM IPSU</li>
+                </ul>
+            </figure>
+        </article>
+        </div>
+
+        <div class="col-3">
+            <figure class="linea-izquierda">
+                 <img class="flor-derecha" src="./11.png" alt="">
+                <img class="linea-derecha" src="./12.png" alt="">
+               
+            </figure>
+        </div>
+    </div> <!-- Row school online-->
+</section>
+
+<div class="row">
+    <div class="col-12 titulo-teacher">
+        <h4>Our Teachers</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+    </div>
+
+    <div class="col-12 imagen-teacher">
+        <figure class="imagenes-teacher">
+            <img src="./5.png" alt="">
+        </figure>
+    </div>
+
+    <div class="col-4 nombre-1">
+        <h5>Teacher Name</h5>
+        <h6>Lorem Ipsu</h6>
+    </div>
+
+    <div class="col-4 nombre-2">
+        <h5>Teacher Name</h5>
+        <h6>Lorem Ipsu</h6>
+    </div>
+
+    <div class="col-4 nombre-3">
+        <h5>Teacher Name</h5>
+        <h6>Lorem Ipsu</h6>
+    </div>
+
+    <div class="col-12 videos-channel">
+        <h5>Videos our youtube channel</h5>
+    </div>
+
+    <div class="col-12 imagen-chicos">
+        <img src="./6.png" alt="">
+    </div>
+
+    <div class="col-4 videos-chicos-1">
+        <img src="./7.png" alt="">
+        <article class="fechas-1">
+        <p class="fecha">March 01.2021</p>
+        <p class="texto">Incididunt ut labore et dolore magna aliqua. Utenim ad minim</p>
+        </article>
+    </div>
+
+    <div class="col-4 videos-chicos-2">
+        <img src="./7.png" alt="">
+        <article class="fechas-2">
+        <p class="fecha">March 01.2021</p>
+        <p class="texto">Incididunt ut labore et dolore magna aliqua. Utenim ad minim</p>
+        </article>
+    </div>
+
+    <div class="col-4 videos-chicos-3">
+        <img src="./7.png" alt="">
+        <article class="fechas-3">
+        <p class="fecha">March 01.2021</p>
+        <p class="texto">Incididunt ut labore et dolore magna aliqua. Utenim ad minim</p>
+        </article>
+    </div>
+
+    <div class="col-12 titulo-contacto">
+        <h4>Contact us</h4>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore expedita tenetur perspiciatis fugiat</h6>
+    </div>
+
+    <div class="col-12 formulario">
+<form action="" method="post">
+    <input class="nombre" type="text" name="" id="" placeholder="Your Name"><br>
+    <input class="mail" type="email" name="" id="" placeholder="E-mail">
+    <br>
+    <textarea class="textarea" name="" id="" cols="50" rows="3" placeholder="Messages"></textarea><br>
+    <button type="submit">SEND MESSAGE</button>
+</form>
+    </div>
 </div>
-</div> <!--cierre row-->
 
-<script type="text/javascript">  function showHide(){
-  var ocultar=document.getElementById('div-invisible') 
-  ocultar.style.display=(ocultar.style.display=='none')?'inline':'none' }  </script>
-  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<footer class="footer">
+    <div class="row">
 
-  </body>
+        <div class="col-2">
+            <img class="florcita" src="./11.png" alt="">
+            <img class="linea-footer" src="./12.png" alt="">
+        </div>
+
+        <div class="col-2 address">
+            <h5>Address</h5>
+            <h6>Your address, State USA</h6>
+            <br>
+            <h5>Phone</h5>
+            <h6>001-234-5678</h6>
+            <h5>Email </h5>
+            <h6>yourmail@mail.com</h6>
+        </div>
+
+        <div class="col-4 logo-footer">
+            <a href="" class="imagen-footer-1">LOGO HERE<img src="" alt=""></a>
+            <br>
+            <img src="./redes.png" alt="" class="redes-footer">
+        </div>
+
+        <div class="col-2 bolita-footer">
+            <img src="./8.png" alt="">
+        </div>
+
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+</body>
 </html>
